@@ -1,0 +1,26 @@
+{
+  "name": "pub-mon-coach-finance",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Publicité 60 s pour Mon Coach Finance (Remotion)",
+  "scripts": {
+    "studio": "remotion studio",
+    "render:9x16": "remotion render Pub9x16 out/pub-mon-coach-finance-9x16.mp4 --codec=h264 --crf=16",
+    "render:16x9": "remotion render Pub16x9 out/pub-mon-coach-finance-16x9.mp4 --codec=h264 --crf=16",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.543",
+    "@remotion/google-fonts": "^4.0.543",
+    "@remotion/media-utils": "^4.0.543",
+    "@remotion/transitions": "^4.0.543",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "remotion": "^4.0.543"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "typescript": "^5.8.3"
+  }
+}
