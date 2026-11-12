@@ -112,7 +112,7 @@ export const S11Final: React.FC = () => {
   const fade = prog(f, 268, 32);
   const P = L.portrait;
   const phonePose: Pose = P
-    ? {x: L.w / 2, y: 1096 + (1 - inP) * 300, scale: 1.0 * lerp(0.9, 1, inP), ry: sway, rx: 4}
+    ? {x: L.w / 2, y: 1124 + (1 - inP) * 300, scale: 0.97 * lerp(0.9, 1, inP), ry: sway, rx: 4}
     : {x: 560, y: 540 + (1 - inP) * 200, scale: 1.0 * lerp(0.9, 1, inP), ry: 8 + sway, rx: 3};
   const col: React.CSSProperties = P
     ? {position: 'absolute', left: 0, right: 0, top: 150, display: 'flex', flexDirection: 'column', alignItems: 'center'}
