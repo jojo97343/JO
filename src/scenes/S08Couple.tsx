@@ -94,7 +94,7 @@ export const S08Couple: React.FC = () => {
               {toSettings < 1 && (
                 <div style={{position: 'absolute', inset: 0, transform: `translateX(${-60 * toSettings}px)`}}>
                   <CoupleScreen
-                    me="Enzo"
+                    me="Tom"
                     sync={sync}
                     tile={prog(f, T8.sync + 8, 36, EASE)}
                     newRow={f > 250 ? prog(f, 250, 30, EASE) + prog(f, 280, 40) : 0}

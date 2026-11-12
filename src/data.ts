@@ -1,7 +1,7 @@
 // Données fictives cohérentes dans tout le film.
 // Aujourd'hui (dans l'appli) : samedi 5 septembre 2026, jour de paie le 25 → 19 jours restants.
 
-export const USER = 'Enzo';
+export const USER = 'Tom';
 export const PARTNER_NAME = 'Léa';
 export const MONTH = 'Septembre 2026';
 
@@ -136,7 +136,7 @@ export const COUPLE_CATS = [
   {id: 'courses', name: 'Courses communes', budget: 60, dep: 0, color: '#047857'},
 ];
 export const COUPLE_OPS = [
-  {nom: 'Billets de train', cat: 'vacances', qui: 'E', mt: 120, date: '04/09/2026'},
+  {nom: 'Billets de train', cat: 'vacances', qui: 'T', mt: 120, date: '04/09/2026'},
   {nom: 'Pizzeria', cat: 'resto', qui: 'L', mt: 46, date: '03/09/2026'},
   {nom: 'Bowling', cat: 'sorties', qui: 'L', mt: 18, date: '02/09/2026'},
 ];

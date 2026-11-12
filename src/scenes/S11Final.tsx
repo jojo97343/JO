@@ -79,7 +79,7 @@ export const S11Final: React.FC = () => {
         el: (
           <Phone pose={fo(195, 470, 1.75, 3)}>
             <AppScreen theme={theme}>
-              <CoupleScreen me="Enzo" sync={1} tile={1} />
+              <CoupleScreen me="Tom" sync={1} tile={1} />
             </AppScreen>
           </Phone>
         ),

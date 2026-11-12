@@ -299,7 +299,7 @@ export const RoundBtn: React.FC<{children: React.ReactNode; size?: number}> = ({
   );
 };
 
-/** En-tête mobile : avatar, « Septembre 2026 », « Bonjour Enzo », bascule de thème, paramètres */
+/** En-tête mobile : avatar, « Septembre 2026 », « Bonjour Tom », bascule de thème, paramètres */
 export const Header: React.FC<{dark?: number; enter?: number; sub?: string; title?: string}> = ({dark = 0, enter = 1, sub = 'Septembre 2026', title = `Bonjour ${USER}`}) => {
   const t = useT();
   return (
@@ -334,7 +334,7 @@ export const Header: React.FC<{dark?: number; enter?: number; sub?: string; titl
             fontSize: 16,
           }}
         >
-          {USER.charAt(0)}
+          {title.replace('Bonjour ', '').charAt(0)}
         </div>
         <div style={{display: 'flex', flexDirection: 'column', gap: 1}}>
           <span style={{fontSize: 12, color: t.muted, fontWeight: 600}}>{sub}</span>

@@ -42,7 +42,7 @@ Images clés : `node scripts/stills.mjs Pub9x16 450 900 1300` → `out/stills/`.
 ## Organisation
 
 - `src/theme.ts` — tokens de l'appli (clair / sombre, couleurs de catégories, accents)
-- `src/data.ts` — données fictives (Enzo, Léa, septembre 2026, Tokyo…)
+- `src/data.ts` — données fictives (Tom, Léa, septembre 2026, Tokyo…)
 - `src/layout.ts` — mises en page 9:16 et 16:9, caméra (zoom sur un point de l'écran)
 - `src/components/` — Phone, Finger, Background, Kinetic (typo), Logo, Charts (Donut, LineChart), ui (NavBar, Header, Switch, Sheet…)
 - `src/screens/` — écrans de l'appli (Accueil, Dépense, Bilan, Budget, Archives, PDF, Couple, Partenaire, Vacances)

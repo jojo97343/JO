@@ -58,16 +58,16 @@ export const CoupleHead: React.FC<{pulse?: number}> = ({pulse = 0}) => {
           <span style={{position: 'absolute', inset: 0, borderRadius: '50%', background: '#0b7a53'}} />
           {pulse > 0 && <span style={{position: 'absolute', inset: -10 * pulse, borderRadius: '50%', border: '2px solid #0b7a53', opacity: 1 - pulse}} />}
         </span>
-        ENZO-2026
+        TOM-2026
         <Icon name="copy" size={14} stroke={2.2} color={t.muted} />
       </span>
     </div>
   );
 };
 
-/** Écran Couple, vu par `me` (Enzo ou Léa) */
+/** Écran Couple, vu par `me` (Tom ou Léa) */
 export const CoupleScreen: React.FC<{
-  me: 'Enzo' | 'Léa';
+  me: 'Tom' | 'Léa';
   sync?: number; // 0 → 1 : la dépense de Léa est arrivée
   tile?: number;
   newRow?: number;
@@ -82,13 +82,13 @@ export const CoupleScreen: React.FC<{
 }> = ({me, sync = 0, tile = 0, newRow = 0, scrollY = 0, pulse = 0, desc, amount, catPicked = 0, addPress = 0, enter = () => 1}) => {
   const t = useT();
   const moiName = me;
-  const elleName = me === 'Enzo' ? PARTNER_NAME : USER;
+  const elleName = me === 'Tom' ? PARTNER_NAME : USER;
   const s = clamp(sync);
   const totalBudget = COUPLE_CATS.reduce((a, c) => a + c.budget, 0);
   const baseDep = COUPLE_CATS.reduce((a, c) => a + c.dep, 0);
   const dep = baseDep + COUPLE_NEW.mt * s;
-  const moiPaid = me === 'Enzo' ? 166 : 64 + COUPLE_NEW.mt * s;
-  const ellePaid = me === 'Enzo' ? 64 + COUPLE_NEW.mt * s : 166;
+  const moiPaid = me === 'Tom' ? 166 : 64 + COUPLE_NEW.mt * s;
+  const ellePaid = me === 'Tom' ? 64 + COUPLE_NEW.mt * s : 166;
   const ops = COUPLE_OPS;
   const fmt = (n: number) => eur(Math.round(n));
   return (
@@ -331,11 +331,11 @@ export const SettingsScreen: React.FC<{code: React.ReactNode; codeFocus?: number
         <span style={{width: 44}} />
       </div>
       <div style={{display: 'flex', alignItems: 'center', gap: 14, padding: 16, borderRadius: 20, background: t.card, border: `1px solid ${t.line}`, marginBottom: 22, ...appear(enter(1), 12)}}>
-        <div style={{width: 56, height: 56, borderRadius: '50%', background: t.soft, color: t.softText, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 22, fontWeight: 800}}>E</div>
+        <div style={{width: 56, height: 56, borderRadius: '50%', background: t.soft, color: t.softText, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 22, fontWeight: 800}}>T</div>
         <div style={{flex: 1, display: 'flex', flexDirection: 'column', gap: 2}}>
           <span style={{fontSize: 17, fontWeight: 800}}>{USER}</span>
           <span style={{fontSize: 12, color: t.muted, fontWeight: 600}}>
-            Code widget · <span style={{letterSpacing: '0.08em', color: t.text}}>ENZO-4F2A</span>
+            Code widget · <span style={{letterSpacing: '0.08em', color: t.text}}>TOM-4F2A</span>
           </span>
         </div>
         <span style={{height: 36, padding: '0 14px', borderRadius: 999, border: `1px solid ${t.line}`, background: t.bg, fontSize: 12, fontWeight: 700, display: 'flex', alignItems: 'center'}}>Copier</span>
